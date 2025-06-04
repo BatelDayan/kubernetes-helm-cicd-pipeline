@@ -6,14 +6,16 @@ This repository contains everything needed to build a CI/CD pipeline for deployi
 
 ## 📁 Project Structure
 
-├── Dockerfile # Docker image for the application
-├── Jenkinsfile # CI/CD pipeline for Jenkins
-├── helm-chart/ # Helm chart for deploying to Kubernetes
-│ ├── Chart.yaml
-│ ├── values.yaml
-│ └── templates/
-│ ├── deployment.yaml
-│ └── service.yaml
+```
+├── Dockerfile
+├── Jenkinsfile
+├── helm-chart/
+│   ├── Chart.yaml
+│   ├── values.yaml
+│   └── templates/
+│       ├── deployment.yaml
+│       └── service.yaml
+```
 
 
 ---
