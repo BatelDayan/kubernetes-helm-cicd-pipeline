@@ -9,4 +9,5 @@ spec:
   ports:
     - port: 80
       targetPort: {{ .Values.image.port }}
-  type: ClusterIP
+      nodePort: {{ .Values.service.nodePort }}
+  type: NodePort

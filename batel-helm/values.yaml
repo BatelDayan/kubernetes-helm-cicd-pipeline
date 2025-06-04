@@ -7,3 +7,6 @@ image:
   repository: batel123d/batel-basic-web
   tag: latest
   port: 80
+
+service:
+  nodePort: 30080
