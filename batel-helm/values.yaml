@@ -4,6 +4,6 @@ replicaCount: 1
 nodeName: node-worker-1
 
 image:
-  repository: nginx
+  repository: batel123d/batel-basic-web
   tag: latest
   port: 80
