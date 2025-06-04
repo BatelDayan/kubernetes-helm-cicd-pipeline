@@ -1,0 +1,9 @@
+appName: batel-nginx
+namespace: batel-ns
+replicaCount: 1
+nodeName: node-worker-1
+
+image:
+  repository: nginx
+  tag: latest
+  port: 80
