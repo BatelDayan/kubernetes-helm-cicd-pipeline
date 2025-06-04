@@ -9,4 +9,4 @@ image:
   port: 80
 
 service:
-  nodePort: 30080
+  nodePort: 32000
