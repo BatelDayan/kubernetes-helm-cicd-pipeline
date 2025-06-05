@@ -1,5 +1,5 @@
 appName: batel-nginx
-namespace: batel-ns
+namespace: batel
 replicaCount: 1
 nodeName: node-worker-1
 
@@ -9,4 +9,4 @@ image:
   port: 80
 
 service:
-  nodePort: 32000
+  type: LoadBalancer

@@ -13,8 +13,8 @@ spec:
       labels:
         app: {{ .Values.appName }}
     spec:
-      nodeSelector:
-        kubernetes.io/hostname: {{ .Values.nodeName }}
+#      nodeSelector:
+#       kubernetes.io/hostname: {{ .Values.nodeName }}
       containers:
         - name: {{ .Values.appName }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"

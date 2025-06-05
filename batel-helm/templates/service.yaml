@@ -9,5 +9,4 @@ spec:
   ports:
     - port: 80
       targetPort: {{ .Values.image.port }}
-      nodePort: {{ .Values.service.nodePort }}
-  type: NodePort
+  type: {{ .Values.service.type }}
