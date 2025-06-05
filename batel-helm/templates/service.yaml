@@ -7,6 +7,6 @@ spec:
   selector:
     app: {{ .Values.appName }}
   ports:
-    - port: 80
+    - port: {{ .Values.service.port }}
       targetPort: {{ .Values.image.port }}
   type: {{ .Values.service.type }}
