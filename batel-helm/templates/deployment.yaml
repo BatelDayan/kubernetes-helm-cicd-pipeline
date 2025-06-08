@@ -12,6 +12,8 @@ spec:
     metadata:
       labels:
         app: {{ .Values.appName }}
+      annotations:
+        rollme: "{{ now | unixEpoch }}"
     spec:
 #      nodeSelector:
 #       kubernetes.io/hostname: {{ .Values.nodeName }}
