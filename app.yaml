@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: batel-helm-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/BatelDayan/kubernetes-helm-cicd-pipeline.git
+    path: batel-helm
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: batel
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
